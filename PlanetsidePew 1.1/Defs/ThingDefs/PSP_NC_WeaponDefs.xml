@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥"NOW THAT'S A REAL BADGE, I'M A REAL COP, AND THIS IS A REAL FUCKING GUN!"♥♥♥♥♥♥♥♥♥♥-->                   
+<!--■■■■■■■■■■■■■■■■■■[SPECIALWEAPON]NC05JACKHAMMER-NC05JACKHAMMER-NC05JACKHAMMER[SPECIALWEAPON]■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPJACKHAMMERBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>NC05 jackhammer pellets</label>
+    <graphicData>
+      <texPath>NC_NC05JackhammerBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPJACKHAMMER</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>NC05 jackhammer</label>
+    <description>The legendary NC05 Jackhammer heavy shotgun's stopping power and sustained fire capabilities make it a frightening weapon in close quarters combat.</description>
+    <graphicData>
+      <texPath>NC_NC05Jackhammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPJACKHAMMERSOUNDBODY</soundCast>
+      <defaultProjectile>PSPJACKHAMMERBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>5</muzzleFlashScale>
+      <range>15.9</range>
+      <burstShotCount>8</burstShotCount>
+      <ticksBetweenBurstShots>34</ticksBetweenBurstShots>
+      <warmupTime>1.75</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <Mass>6</Mass>
+      <WorkToMake>60000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+</ThingDef>
+
+<!--■■■■■■■■■■■■■■■■■■[LIGHTMACHINEGUN]NC6GAUSSSAW-NC6GAUSSSAW-NC6GAUSSSAW[LIGHTMACHINEGUN]■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPGAUSSSAWBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>NC6 gauss SAW bullet</label>
+    <graphicData>
+      <texPath>NC_NC6GaussSAWBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPGAUSSSAW</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>NC6 gauss SAW</label>
+    <description>The NC6 Gauss SAW's low production cost, reliability, and sheer stopping power lead to wide-spread adoption of the weapon.</description>
+    <graphicData>
+      <texPath>NC_NC6GaussSAW</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>PSPGAUSSSAWBULLET</defaultProjectile>
+      <warmupTime>2.15</warmupTime>
+      <range>31.9</range>
+      <burstShotCount>10</burstShotCount>
+      <ticksBetweenBurstShots>26</ticksBetweenBurstShots>
+      <soundCast>PSPSAWSOUNDBODY</soundCast>
+      <muzzleFlashScale>7</muzzleFlashScale>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>2.15</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <Mass>5</Mass>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+<!--■■■[GUN]TAGS,COMPS,TOOLS[GUN]■■■-->
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+ 
+<!--■■■■■■■■■■■■■■■■■■[BATTLERIFLE]WARDEN-WARDEN-WARDEN[BATTLERIFLE]■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮-->
+<ThingDef ParentName="BaseBullet">
+<defName>PSPWARDENBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>Warden bullet</label>
+    <graphicData>
+      <texPath>NC_WardenBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPWARDEN</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->  
+    <label>Warden</label>
+    <description>The accurate Warden semi-automatic battle rifle is effective at stopping infantry far past the typical LMG or carbine.</description>
+    <graphicData>
+      <texPath>NC_Warden</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPWARDENSOUNDBODY</soundCast>
+      <defaultProjectile>PSPWARDENBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>7</muzzleFlashScale>
+      <range>42.9</range>
+      <warmupTime>1.00</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <Mass>4</Mass>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+<!--■■■[GUN]TAGS,COMPS,TOOLS[GUN]■■■-->
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■[SUBMACHINEGUN]AF4CYCLONE-AF4CYCLONE-AF4CYCLONE[SUBMACHINEGUN]■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPCYCLONEBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>AF-4 cyclone bullet</label>
+    <graphicData>
+      <texPath>NC_AF4CycloneBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPCYCLONE</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>AF-4 cyclone</label>
+    <description>The AF-4 Cyclone is a fully automatic submachine gun that has a higher damage output than most weapons in its class.</description>
+    <graphicData>
+      <texPath>NC_AF4Cyclone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPCYCLONESOUNDBODY</soundCast>
+      <defaultProjectile>PSPCYCLONEBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>6</muzzleFlashScale>
+      <range>21.9</range>
+      <burstShotCount>14</burstShotCount>
+      <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+      <warmupTime>1.40</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <Mass>4</Mass>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>25</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+</ThingDef>
+
+<!--■■■■■■■■■■■■■■■■[PISTOL]NC4MAGSHOT-NC4MAGSHOT-NC4MAGSHOT[PISTOL]■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPMAGSHOTBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>NC4 mag-shot bullet</label>
+    <graphicData>
+      <texPath>NC_NC4MagShotBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPMAGSHOT</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>NC4 mag-shot</label>
+    <description>The versatile standard-issue NC4 Mag-Shot was the first pistol to utilize Gauss technology.</description>
+    <graphicData>
+      <texPath>NC_NC4MagShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPMAGSHOTSOUNDBODY</soundCast>
+      <defaultProjectile>PSPMAGSHOTBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>5</muzzleFlashScale>
+      <range>29.9</range>
+      <warmupTime>1</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <Mass>2</Mass>
+      <WorkToMake>40000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■[HEAVYWEAPON]NC15PHOENIX-NC15PHOENIX-NC15PHOENIX[HEAVYWEAPON]■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseGrenadeProjectile">
+<defName>PSPPHOENIXBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>NC15 phoenix rocket</label>
+    <graphicData>
+      <texPath>NC_NC15PhoenixBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->
+    <projectile>
+      <damageDef>NCBOMB</damageDef>
+      <soundExplode>PSPPHOENIXEXPLOSION</soundExplode>
+      <flyOverhead>true</flyOverhead>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <explosionRadius>2</explosionRadius>
+      <explosionDelay>0</explosionDelay>
+      <speed>18</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPPHOENIX</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>NC15 phoenix</label>
+    <description>The powerful NC15 Phoenix uses a camera guided missile that allows the user to adjust its trajectory mid-flight.</description>
+    <graphicData>
+      <texPath>NC_NC15Phoenix</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPPHOENIXSOUNDBODY</soundCast>
+      <defaultProjectile>PSPPHOENIXBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <forcedMissRadius>0.1</forcedMissRadius>
+      <muzzleFlashScale>12</muzzleFlashScale>
+      <range>44.9</range>
+      <warmupTime>2.30</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.96</AccuracyLong>
+      <Mass>6</Mass>
+      <WorkToMake>60000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+<!--■■■[GUN]TAGS,COMPS,TOOLS[GUN]■■■-->
+    <weaponTags>
+      <li>SpacerGun</li>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+</Defs>

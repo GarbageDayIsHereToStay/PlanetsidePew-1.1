@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-New Conglomerate Weapons-=-=-=-=-->
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-NC05 Jackhammer (SpecialWeapon)-=-=-=-=-->
+  <PSPJACKHAMMERBULLET.label>NC05 ジャックハンマ弾</PSPJACKHAMMERBULLET.label>
+    
+  <PSPJACKHAMMER.label>NC05 ジャックハンマ</PSPJACKHAMMER.label>
+  <PSPJACKHAMMER.description>そのストッピングパワーと継続的発砲能力により、NC05 ジャックハンマは近接戦闘において恐ろしい武器となる。また、発射速度が２倍になるユニークなバーストモードを特徴としている。</PSPJACKHAMMER.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-NC6 Gauss SAW (LMG)-=-=-=-=--> 
+  <PSPGAUSSSAWBULLET.label>NC6 ガウス SAW 弾</PSPGAUSSSAWBULLET.label>
+    
+  <PSPGAUSSSAW.label>NC6 ガウス SAW</PSPGAUSSSAW.label>
+  <PSPGAUSSSAW.description>NC6 ガウス SAW は、低い生産コストに、高い信頼性、そして強力なストッピングパワーをもつため、Auraxian-戦争 初期に広く採用される武器となった。</PSPGAUSSSAW.description>
+    
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-Warden (BattleRifle)-=-=-=-=-->
+  <PSPWARDENBULLET.label>監視員弾</PSPWARDENBULLET.label>
+  
+  <PSPWARDEN.label>監視員</PSPWARDEN.label>
+  <PSPWARDEN.description>正確な監視員セミオートマチック・バトルライフルは、一般的な LMG やカービンよりも歩兵を食い止めるうえではるかに効果的</PSPWARDEN.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-AF-4 Cyclone (SMG)-=-=-=-=-->
+  <PSPCYCLONEBULLET.label>AF-4 サイクロン弾</PSPCYCLONEBULLET.label>
+   
+  <PSPCYCLONE.label>AF-4 サイクロン弾</PSPCYCLONE.label>
+  <PSPCYCLONE.description>AF-4 ほとんどの SMG よりも高いダメージ出力を備えたフルオートマチック・サブマシンガンである。</PSPCYCLONE.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-NC4 Mag-Shot (Pistol)-=-=-=-=-->
+  <PSPMAGSHOTBULLET.label>NC4 マグネショット弾</PSPMAGSHOTBULLET.label>
+      
+  <PSPMAGSHOT.label>NC4 マグネショット</PSPMAGSHOT.label>
+  <PSPMAGSHOT.description>汎用性が高い標準支給の NC4 マグネショット は、ガウステクノロジーを利用した最初のピストルだ。</PSPMAGSHOT.description>PSPMAGSHOT.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-NC15 Phoenix (HeavyWeapon)-=-=-=-=-->
+  <PSPPHOENIXBULLET.label>NC15 フェニックスミサイル</PSPPHOENIXBULLET.label>
+  
+  <PSPPHOENIX.label>NC15 フェニックス</PSPPHOENIX.label>
+  <PSPPHOENIX.description>強力な NC15 フェニックス はカメラ誘導ミサイルを使用しており、飛翔中におけるミサイルの弾道を調整可能。</PSPPHOENIX.description>
+  
+    
+  <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Terran Republic Weapons-=-=-=-=-->
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-T7 Mini-Chaingun (SpecialWeapon)-=-=-=-=-->
+  <PSPMCGBULLET.label>T7 ミニチェーンガン弾</PSPMCGBULLET.label>
+  
+  <PSPMCG.label>T7 ミニチェーンガン</PSPMCG.label>
+  <PSPMCG.description>T7 ミニチェーンガンの銃声は敵の心を震え上がらせる。継続的な発射が可能であるため、敵分隊の全体をバラバラにできる。</PSPMCG.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-T9 CARV (LMG)-=-=-=-=-->
+  <PSPCARVBULLET.label>T9 CARV 弾</PSPCARVBULLET.label>
+  <PSPCARV.description>その名前が示すように、T9 CARV の発射速度はリロードを必要とする前に敵集団全体を切り裂くことができる。</PSPCARV.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-AMR-66 (BattleRifle)-=-=-=-=-->
+  <PSPAMRBULLET.label>AMR-66 弾</PSPAMRBULLET.label>
+  <PSPAMR.description>セミ・オートマチックの AMR-66 バトルライフルは、中距離でも相当なストッピングパワーを保持する強力な弾薬を使用している。</PSPAMR.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-SMG-46 Armistice (SMG)-=-=-=-=-->
+  <PSPARMISTICEBULLET.label>SMG-46 平和因弾</PSPARMISTICEBULLET.label>
+
+  <PSPARMISTICE.label>SMG-46 平和因</PSPARMISTICE.label>
+  <PSPARMISTICE.description>SMG-46 平和因フルオートマチック・サブマシンガンは、凄まじい速さの発射速度を備えている。</PSPARMISTICE.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-TX1 Repeater (Pistol)-=-=-=-=-->
+  <PSPREPEATERBULLET.label>TX1 リピータ弾</PSPREPEATERBULLET.label>
+  
+  <PSPREPEATER.label>TX1 リピータ</PSPREPEATER.label>
+  <PSPREPEATER.description>信頼性の高い TX1 リピータは３００年前の銃器設計を何度も練りなおした結果の最新モデルだ。３点バーストモードは至近距離においてかなりのストッピングパワーを提供する。</PSPREPEATER.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-T2 Striker (HeavyWeapon)-=-=-=-=-->
+  <PSPSTRIKERBULLET.label>ストライカーミサイル</PSPSTRIKERBULLET.label>
+    
+  <PSPSTRIKER.label>T2 ストライカー</PSPSTRIKER.label>
+  <PSPSTRIKER.description>無誘導の発射が可能な T2 ストライカー は、６発の弾頭を収納するコンパクトなマガジンと、接近した敵航空機へと収束する熱探知弾頭を備えている。</PSPSTRIKER.description>
+  
+  <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Vanu Sovereignty Weapons-=-=-=-=-->
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-Lasher X2 (SpecialWeapon)-=-=-=-=--> 
+  <PSPLASHERBULLET.label>むち作り手 X2 球体</PSPLASHERBULLET.label>
+  
+  <PSPLASHER.label>むち作り手 X2</PSPLASHER.label>
+  
+  <PSPLASHER.description>実験作であるむち作り手 X2 は、硬い表面に触れると爆発する揮発性のプラズマ球を発射する。制圧射撃能力と、敵歩兵をあぶりだし溶かしてしまう能力の有効性を、実用試験において実証した。</PSPLASHER.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-Orion VS54 (LMG)-=-=-=-=-->
+  <PSPORIONBULLET.label>オリオン VS54 弾</PSPORIONBULLET.label>
+  
+  <PSPORION.label>オリオン VS54</PSPORION.label>
+  <PSPORION.description>オリオン VS54 は バヌ暴行兵隊に標準支給される LMG だ。他のほとんどの LMG よりも優れた移動中における腰だめ精度と安定性をもつことを、軽量構造により可能としている。</PSPORION.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-Eidolon VE33 (BattleRifle)-=-=-=-=-->
+  <PSPEIDOLONBULLET.label>エイドロン VE33 弾</PSPEIDOLONBULLET.label>
+  
+  <PSPEIDOLON.label>エイドロン VE33</PSPEIDOLON.label>
+  <PSPEIDOLON.description>高いダメージを誇るエイドロン VE33 は、遠くの敵を簡単に打ち倒せる精確なセミ・オートマチック射撃を特徴としている。</PSPEIDOLON.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-Eridani SX5 (SMG)-=-=-=-=-->
+  <PSPERIDANIBULLET.label>エリダニ SX5 弾</PSPERIDANIBULLET.label>
+  
+  <PSPERIDANI.label>エリダニ SX5</PSPERIDANI.label>
+  <PSPERIDANI.description>エリダニ SX5 フルオートマチック・サブマシンガンは至近距離での戦闘において優れている。</PSPERIDANI.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-Beamer VS3 (Pistol)-=-=-=-=-->
+  <PSPBEAMERBULLET.label>光線 VS3 弾</PSPBEAMERBULLET.label>
+  
+  <PSPBEAMER.label>光線 VS3</PSPBEAMER.label>
+  <PSPBEAMER.description>光線 VS3 はヴァヌ・サヴランティーの標準的なサイドアームだ。その高い発射速度により、近距離の標的を素早く排除できる。</PSPBEAMER.description>
+                                       <!--=-=-=-=-=-=-=-=-=-=-=-=-=-Lancer VS22 (HeavyWeapon)-=-=-=-=-->
+  <PSPLANCERBULLET.label>ランサー VS22 光線</PSPLANCERBULLET.label>
+    
+  <PSPLANCER.label>ランサー VS22</PSPLANCER.label>
+  <PSPLANCER.description>ランサー VS22 の粒子加速器は火力を一点に集中させ高弾速の対装甲弾をピンポイントの精度で撃ちだすことが可能。</PSPLANCER.description>
+  
+</LanguageData>

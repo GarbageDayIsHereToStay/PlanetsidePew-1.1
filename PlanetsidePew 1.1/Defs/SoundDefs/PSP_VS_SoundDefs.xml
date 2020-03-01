@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!--■■■■■■■■■■■■■■■■■■[SPECIALWEAPON]LASHERX2-LASHERX2-LASHERX2[SPECIALWEAPON]■■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPLASHERSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>VS_LASHER_SoundBody</clipFolderPath>
+        </li>
+      </grains>      
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.225882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[LIGHTMACHINEGUN]ORIONVS54-ORIONVS54-ORIONVS54[LIGHTMACHINEGUN]■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPORIONSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>VS_ORION_SoundBody</clipFolderPath>
+        </li>
+      </grains> 
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.245882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[BattleRifle]EIDOLONVE33-EIDOLONVE33-EIDOLONVE33[BattleRifle]■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPEIDOLONSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>VS_EIDOLON_SoundBody</clipFolderPath>
+        </li>
+      </grains>
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange>       
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.245882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[SUBMACHINEGUN]ERIDANISX5-ERIDANISX5-ERIDANISX5[SUBMACHINEGUN]■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPERIDANISOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>VS_ERIDANI_SoundBody</clipFolderPath>
+        </li>
+      </grains>
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange>       
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.245882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[PISTOL]BEAMERVS3-BEAMERVS3-BEAMERVS3[PISTOL]■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPBEAMERSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>VS_BEAMER_SoundBody</clipFolderPath>
+        </li>
+      </grains>
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.245882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+  
+<!--■■■■■■■■■■■■■■■■[HEAVYWEAPON]LANCERVS22-LANCERVS22-LANCERVS22[HEAVYWEAPON]■■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPLANCERSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>VS_LANCER_SoundBody</clipFolderPath>
+        </li>
+      </grains>      
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.185882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+</Defs>
+

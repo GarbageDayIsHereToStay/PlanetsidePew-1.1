@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥"SO WE SHOULD JUST REGISTER YOU AS A LETHAL WEAPON?"♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥-->     
+<!--■■■■■■■■■■■■■■■■■■[SPECIALWEAPON]T7MINICHAINGUN-T7MINICHAINGUN-T7MINICHAINGUN[SPECIALWEAPON]■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPMCGBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>T7 mini-chaingun bullet</label>
+    <graphicData>
+	    <texPath>TR_T7MCGBullet</texPath>
+	    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->  
+    <projectile>
+      <damageDef>Bullet</damageDef>
+	    <damageAmountBase>3</damageAmountBase>
+	    <armorPenetrationBase>0.03</armorPenetrationBase>
+	    <speed>55</speed>
+    </projectile>
+</ThingDef>
+	
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPMCG</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>T7 mini-chaingun</label>
+	  <description>The sound of the menacing T7 MCG firing strikes fear into the heart of its enemies. It is capable of sustained fire that can tear apart entire squads.</description>
+    <graphicData>
+	    <texPath>TR_T7MCG</texPath>
+	    <graphicClass>Graphic_Single</graphicClass>
+	  </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+	  <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+	    <li>
+	    <soundCast>PSPMCGSOUNDBODY</soundCast>
+	    <defaultProjectile>PSPMCGBULLET</defaultProjectile>
+	    <verbClass>Verb_Shoot</verbClass>
+		  <hasStandardCommand>true</hasStandardCommand>
+	    <muzzleFlashScale>5</muzzleFlashScale>
+		  <range>23.9</range>
+		  <burstShotCount>150</burstShotCount>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+		  <warmupTime>1.90</warmupTime>
+	    </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.90</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.12</AccuracyMedium>
+      <AccuracyLong>0.08</AccuracyLong>
+      <Mass>6</Mass>
+      <WorkToMake>60000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+<!--■■■[GUN]TAGS,COMPS,TOOLS[GUN]■■■-->
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[LIGHTMACHINEGUN]T9CARV-T9CARV-T9CARV[LIGHTMACHINEGUN]■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPCARVBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>T9 CARV bullet</label>
+    <graphicData>
+      <texPath>TR_T9CARVBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPCARV</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>T9 CARV</label>
+    <description>Aptly named, the T9 CARV's rate of fire allows it to cut through whole groups of enemies before needing to reload.</description>
+    <graphicData>
+      <texPath>TR_T9CARV</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPCARVSOUNDBODY</soundCast>
+      <defaultProjectile>PSPCARVBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>5</muzzleFlashScale>
+      <range>29.9</range>
+      <burstShotCount>25</burstShotCount>
+      <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+      <warmupTime>1.75</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <Mass>5</Mass>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+<!--■■■[GUN]TAGS,COMPS,TOOLS[GUN]■■■-->
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[BattleRifle]AMR66-AMR66-AMR66[BattleRifle]■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPAMRBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>AMR-66 bullet</label>
+    <graphicData>
+      <texPath>TR_AMR66Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->  
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPAMR</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>AMR-66</label>
+    <description>The semi-automatic AMR-66 battle rifle uses powerful cartridges that hold considerable stopping power up to medium range.</description>
+    <graphicData>
+      <texPath>TR_AMR66</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPAMRSOUNDBODY</soundCast>
+      <defaultProjectile>PSPAMRBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>7</muzzleFlashScale>
+      <range>39.9</range>
+      <warmupTime>0.75</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <Mass>4</Mass>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+<!--■■■[GUN]TAGS,COMPS,TOOLS[GUN]■■■-->
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[SUBMACHINEGUN]SMG46ARMISTICE-SMG46ARMISTICE-SMG46ARMISTICE[SUBMACHINEGUN]■■■■■■■■■■■-->
+<ThingDef ParentName="BaseBullet">
+<defName>PSPARMISTICEBULLET</defName>
+<!--■■■[BULLET]PRESENTATION[BULLET]■■■-->
+    <label>SMG-46 Armistice bullet</label>
+    <graphicData>
+      <texPath>TR_SMG46ArmisticeBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->   
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPARMISTICE</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>SMG-46 armistice</label>
+    <description>The SMG-46 Armistice fully automatic submachine gun features an extremely fast rate of fire.</description>
+    <graphicData>
+      <texPath>TR_SMG46Armistice</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPARMISTICESOUNDBODY</soundCast>
+      <defaultProjectile>PSPARMISTICEBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>5</muzzleFlashScale>
+      <range>19.9</range>
+      <burstShotCount>24</burstShotCount>
+      <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+      <warmupTime>1.20</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.95</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.10</AccuracyMedium>
+      <AccuracyLong>0.05</AccuracyLong>
+      <Mass>4</Mass>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■--> 
+    <costList>
+      <Steel>25</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+</ThingDef>
+                              
+<!--■■■■■■■■■■■■■■■■■■[PISTOL]TX1REPEATER-TX1REPEATER-TX1REPEATER[PISTOL]■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<ThingDef ParentName="BaseBullet">
+<defName>PSPREPEATERBULLET</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>TX1 repeater bullet</label>
+    <graphicData>
+      <texPath>TR_TX1RepeaterBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮--> 
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPREPEATER</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>TX1 repeater</label>
+    <description>The reliable TX1 Repeater is the latest iteration of a firearm design that has stretched back for 300 years. Its three round burst fire mode provides considerable stopping power at close range.</description>
+    <graphicData>
+      <texPath>TR_TX1Repeater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■--> 
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPREPEATERSOUNDBODY</soundCast>
+      <defaultProjectile>PSPREPEATERBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>5</muzzleFlashScale>
+      <range>17.9</range>
+      <burstShotCount>3</burstShotCount>
+      <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+      <warmupTime>0.70</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.20</AccuracyMedium>
+      <AccuracyLong>0.02</AccuracyLong>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■[HEAVYWEAPON]T2STRIKER-T2STRIKER-T2STRIKER[HEAVYWEAPON]■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseGrenadeProjectile">
+<defName>PSPSTRIKERBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>T2 striker rocket</label>
+    <graphicData>
+      <texPath>TR_T2StrikerBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->
+    <projectile>
+      <damageDef>TRBOMB</damageDef>
+      <soundExplode>PSPSTRIKEREXPLOSION</soundExplode>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <explosionRadius>1</explosionRadius>
+      <explosionDelay>0</explosionDelay>
+      <speed>40</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPSTRIKER</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>T2 Striker</label>
+    <description>The dumbfire-capable T2 Striker houses a six-round magazine of compact, heat-seeking rockets that will home in when within proximity of enemy aircraft.</description>
+    <graphicData>
+      <texPath>TR_T2Striker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_SMG</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPSTRIKERSOUNDBODY</soundCast>
+      <defaultProjectile>PSPSTRIKERBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <forcedMissRadius>1</forcedMissRadius>
+      <muzzleFlashScale>9</muzzleFlashScale>
+      <range>39.9</range>
+      <burstShotCount>6</burstShotCount>
+      <ticksBetweenBurstShots>26</ticksBetweenBurstShots>
+      <warmupTime>2.2</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <Mass>5</Mass>
+      <WorkToMake>60000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+<!--■■■[GUN]TAGS,COMPS,TOOLS[GUN]■■■-->
+    <weaponTags>
+      <li>SpacerGun</li>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+</Defs>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥"I'M TO OLD FOR THIS SHIT."♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥--> 
+<!--■■■■■■■■■■■■■■■■■■THING CATEGORY■■■■■■■■■■■■■■■■■■■■-->
+<ThingCategoryDef>
+<defName>PSPGUNS</defName>
+    <label>PSP guns</label>
+    <parent>WeaponsRanged</parent>
+</ThingCategoryDef>
+  
+<!--■■■■■■■■■■■■■■■■■■CUSTOM GUN DEF■■■■■■■■■■■■■■■■■■■■-->
+<thingDef Name="BASEPSPGUNS" Abstract="True" ParentName="BaseWeapon">
+    <thingCategories>
+      <li>PSPGUNS</li>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+<!--■■■RECIPE,COST■■■-->
+    <recipeMaker>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+    <smeltable>true</smeltable>
+    <generateCommonality>0.05</generateCommonality>
+<!--■■■TAGS,COMPS,TOOLS■■■-->
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <comps>
+      <li Class="CompProperties_Art">
+      <nameMaker>NamerArtWeaponGun</nameMaker>
+      <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+      <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li>
+      <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <tools>
+      <li>
+      <label>grip</label>
+      <capacities>
+        <li>Blunt</li>
+      </capacities>
+      <power>8</power>
+      <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+      <label>barrel</label>
+      <capacities>
+        <li>Blunt</li>
+        <li>Poke</li>
+      </capacities>
+      <power>8</power>
+      <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+</thingDef>
+</Defs>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!--■■■■■■■■■■■■■■■■■■[SPECIALWEAPON]T7MINICHAINGUN-T7MINICHAINGUN-T7MINICHAINGUN[SPECIALWEAPON]■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPMCGSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>TR_MCG_SoundBody</clipFolderPath>
+        </li>
+      </grains> 
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.245882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+
+<!--■■■■■■■■■■■■■■■■■■[LIGHTMACHINEGUN]T9CARV-T9CARV-T9CARV[LIGHTMACHINEGUN]■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPCARVSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>TR_CARV_SoundBody</clipFolderPath>
+        </li>
+      </grains>
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange>       
+      <pitchRange>
+        <min>0.9082353</min>        
+        <max>1.105882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+    
+<!--■■■■■■■■■■■■■■■■■■[BattleRifle]AMR66-AMR66-AMR66[BattleRifle]■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPAMRSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>TR_AMR_SoundBody</clipFolderPath>
+        </li>
+      </grains>
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange>       
+      <pitchRange>
+        <min>0.9082353</min>        
+        <max>1.105882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+    
+<!--■■■■■■■■■■■■■■■■■■[SUBMACHINEGUN]SMG46ARMISTICE-SMG46ARMISTICE-SMG46ARMISTICE[SUBMACHINEGUN]■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPARMISTICESOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>TR_ARMISTICE_SoundBody</clipFolderPath>
+        </li>
+      </grains> 
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.9082353</min>        
+        <max>1.105882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+    
+<!--■■■■■■■■■■■■■■■■■■[PISTOL]TX1REPEATER-TX1REPEATER-TX1REPEATER[PISTOL]■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPREPEATERSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>TR_REPEATER_Soundbody</clipFolderPath>
+        </li>
+      </grains> 
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.9082353</min>        
+        <max>1.105882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+    
+<!--■■■■■■■■■■■■■■■■[HEAVYWEAPON]T2STRIKER-T2STRIKER-T2STRIKER[HEAVYWEAPON]■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPSTRIKERSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>TR_STRIKER_Soundbody</clipFolderPath>
+        </li>
+      </grains>  
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.9082353</min>        
+        <max>1.105882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+
+<SoundDef>
+<defName>PSPSTRIKEREXPLOSION</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>STRIKERPHOENIX_Explosion</clipFolderPath>
+        </li>
+      </grains>  
+      <volumeRange>
+        <min>30</min>        
+        <max>30</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.9082353</min>        
+        <max>1.105882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+</Defs>

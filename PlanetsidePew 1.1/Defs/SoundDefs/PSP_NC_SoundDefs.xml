@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!--■■■■■■■■■■■■■■■■■■[SPECIALWEAPON]NC05JACKHAMMER-NC05JACKHAMMER-NC05JACKHAMMER[SPECIALWEAPON]■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPJACKHAMMERSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>NC_JACKHAMMER_SoundBody</clipFolderPath>
+        </li>
+      </grains>
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange>       
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.205882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+    
+<!--■■■■■■■■■■■■■■■■■■[LIGHTMACHINEGUN]NC6GAUSSSAW-NC6GAUSSSAW-NC6GAUSSSAW[LIGHTMACHINEGUN]■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPSAWSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>NC_SAW_SoundBody</clipFolderPath>
+        </li>
+      </grains> 
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.185882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+    
+<!--■■■■■■■■■■■■■■■■■■[BATTLERIFLE]WARDEN-WARDEN-WARDEN[BATTLERIFLE]■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPWARDENSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>NC_WARDEN_SoundBody</clipFolderPath>
+        </li>
+      </grains>  
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.185882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+   
+<!--■■■■■■■■■■■■■■■■[SUBMACHINEGUN]AF4CYCLONE-AF4CYCLONE-AF4CYCLONE[SUBMACHINEGUN]■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPCYCLONESOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>NC_CYCLONE_SoundBody</clipFolderPath>
+        </li>
+      </grains>  
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.185882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+    
+<!--■■■■■■■■■■■■■■■■[PISTOL]NC4MAGSHOT-NC4MAGSHOT-NC4MAGSHOT[PISTOL]■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPMAGSHOTSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>NC_MAGSHOT_SoundBody</clipFolderPath>
+        </li>
+      </grains>   
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.185882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+    
+<!--■■■■■■■■■■■■■■■■[HEAVYWEAPON]NC15PHOENIX-NC15PHOENIX-NC15PHOENIX[HEAVYWEAPON]■■■■■■■■■■■■■■■■■■■■■■■-->
+<SoundDef>
+<defName>PSPPHOENIXSOUNDBODY</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>NC_PHOENIX_SoundBody</clipFolderPath>
+        </li>
+      </grains> 
+      <volumeRange>
+        <min>40</min>        
+        <max>40</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.8082353</min>        
+        <max>1.185882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+    
+<SoundDef>
+<defName>PSPPHOENIXEXPLOSION</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+        <clipFolderPath>STRIKERPHOENIX_Explosion</clipFolderPath>
+        </li>
+      </grains>  
+      <volumeRange>
+        <min>50</min>        
+        <max>50</max>
+      </volumeRange> 
+      <pitchRange>
+        <min>0.9082353</min>        
+        <max>1.105882</max>
+      </pitchRange>      
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+</Defs>

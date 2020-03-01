@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥"I DON'T MAKE THINGS DIFFICULT. THAT'S THE WAY THEY GET ALL BY THEMSELVES."♥♥♥♥♥♥♥♥♥-->     
+<!--■■■■■■■■■■■■■■■■■■[SPECIALWEAPON]LASHERX2-LASHERX2-LASHERX2[SPECIALWEAPON]■■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseGrenadeProjectile">
+<defName>PSPLASHERBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->
+    <label>Lasher X2 orb</label>
+    <graphicData>
+      <texPath>VS_LasherX2Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->  
+    <projectile>
+      <damageDef>VSBOMB</damageDef>
+      <soundExplode>DispensePaste</soundExplode>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
+      <explosionRadius>1.5</explosionRadius>
+      <explosionDelay>0</explosionDelay>
+      <speed>55</speed>
+    </projectile>
+<!--■■■[BULLET]COMPS[BULLET]■■■-->
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPLASHER</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>Lasher X2</label>
+    <description>The experimental Lasher X2 fires volatile orbs of plasma that explode on contact with hard surfaces. Field trials have demonstrated its effectiveness at suppressing fire, flushing out enemies and melting infantry.</description>
+    <graphicData>
+      <texPath>VS_LasherX2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPLASHERSOUNDBODY</soundCast>
+      <defaultProjectile>PSPLASHERBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams> 
+      <forcedMissRadius>1</forcedMissRadius>
+      <muzzleFlashScale>5</muzzleFlashScale>
+      <range>32.9</range>
+      <burstShotCount>4</burstShotCount>
+      <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+      <warmupTime>2.0</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <Mass>6</Mass>
+      <WorkToMake>60000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[LIGHTMACHINEGUN]ORIONVS54-ORIONVS54-ORIONVS54[LIGHTMACHINEGUN]■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPORIONBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->  
+    <label>Orion VS54 buller</label>
+    <graphicData>
+      <texPath>VS_OrionVS54Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->  
+    <projectile>
+      <damageDef>VSENERGYBULLET</damageDef>
+      <damageAmountBase>4</damageAmountBase>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPORION</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>Orion VS54</label>
+    <description>The Orion VS54's lightweight construction allows for more accurate hip fire and stability when on the move when compared to most weapons in its class.</description>
+    <graphicData>
+      <texPath>VS_OrionVS54</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPORIONSOUNDBODY</soundCast>
+      <defaultProjectile>PSPORIONBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>5</muzzleFlashScale>
+      <range>33.9</range>
+      <burstShotCount>12</burstShotCount>
+      <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+      <warmupTime>1.40</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <Mass>5</Mass>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[BattleRifle]EIDOLONVE33-EIDOLONVE33-EIDOLONVE33[BattleRifle]■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPEIDOLONBULLET</defName>
+<!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮--> 
+    <label>Eidolon VE33 bullet</label>
+    <graphicData>
+      <texPath>VS_EidolonVE33Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->  
+    <projectile>
+      <damageDef>VSENERGYBULLET</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPEIDOLON</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->
+    <label>Eidolon VE33</label>
+    <description>The heavy-hitting eidolon VE33 features accurate semi-automatic fire capable of dropping distant targets with ease.</description>
+    <graphicData>
+      <texPath>VS_EidolonVE33</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPEIDOLONSOUNDBODY</soundCast>
+      <defaultProjectile>PSPEIDOLONBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>7</muzzleFlashScale>
+      <range>44.9</range>
+      <warmupTime>1.00</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <Mass>4</Mass>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+<!--■■■[GUN]TAGS,COMPS,TOOLS[GUN]■■■-->
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[SUBMACHINEGUN]ERIDANISX5-ERIDANISX5-ERIDANISX5[SUBMACHINEGUN]■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPERIDANIBULLET</defName>
+<!--■■■[BULLET]PRESENTATION[BULLET]■■■-->  
+    <label>Eridani SX5 bullet</label>
+    <graphicData>
+      <texPath>VS_EridaniSX5Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->     
+    <projectile>
+      <damageDef>VSENERGYBULLET</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPERIDANI</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■--> 
+    <label>Eridani SX5</label>
+    <description>The eridani SX5 fully automatic submachine gun excels in close quarter combat situations.</description>
+    <graphicData>
+      <texPath>VS_EridaniSX5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPERIDANISOUNDBODY</soundCast>
+      <defaultProjectile>PSPERIDANIBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>7</muzzleFlashScale>
+      <range>23.9</range>
+      <burstShotCount>16</burstShotCount>
+      <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+      <warmupTime>1.25</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <Mass>4</Mass>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■--> 
+    <costList>
+      <Steel>25</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+</ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■■■[PISTOL]BEAMERVS3-BEAMERVS3-BEAMERVS3[PISTOL]■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseBullet">
+<defName>PSPBEAMERBULLET</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■-->  
+    <label>Beamer VS3 bullet</label>
+    <graphicData>
+      <texPath>VS_BeamerVS3Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--▮▮▮[BULLET]STATS[BULLET]▮▮▮-->  
+    <projectile>
+      <damageDef>VSENERGYBULLET</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+</ThingDef>
+ 
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■--> 
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPBEAMER</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■--> 
+    <label>Beamer VS3</label>
+    <description>The Beamer VS3 is the standard sidearm for the Vanu Sovereignty. Its high rate of fire allows the user to eliminate nearby targets quickly.</description>
+    <graphicData>
+      <texPath>VS_BeamerVS3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->  
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <verbs>
+      <li>
+      <defaultProjectile>PSPBEAMERBULLET</defaultProjectile>
+      <soundCast>PSPBEAMERSOUNDBODY</soundCast>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <muzzleFlashScale>5</muzzleFlashScale>
+      <range>29.9</range>
+      <warmupTime>0.60</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>0.60</RangedWeapon_Cooldown>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+</ThingDef>
+
+<!--■■■■■■■■■■■■■■■■[HEAVYWEAPON]LANCERVS22-LANCERVS22-LANCERVS22[HEAVYWEAPON]■■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--▮▮▮[BULLET]▮▮▮▮▮▮▮[BULLET]▮▮▮--> 
+<ThingDef ParentName="BaseGrenadeProjectile">
+<defName>PSPLANCERBULLET</defName>
+<!--■■■[BULLET]PRESENTATION[BULLET]■■■-->  
+    <label>Lancer VS22 beam</label>
+    <graphicData>
+      <texPath>VS_LancerVS22Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>4</drawSize>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->
+    <projectile>
+      <damageDef>VSBOMB</damageDef>
+      <soundExplode>DispensePaste</soundExplode>
+      <damageAmountBase>35</damageAmountBase>
+      <armorPenetrationBase>0.30</armorPenetrationBase>
+      <explosionRadius>1.2</explosionRadius>
+      <explosionDelay>0</explosionDelay>
+      <speed>90</speed>
+    </projectile>
+<!--■■■[BULLET]COMPS[BULLET]■■■-->
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+  
+<!--■■■[GUN]■■■■■■■■■[GUN]■■■-->
+<ThingDef ParentName="BASEPSPGUNS">
+<defName>PSPLANCER</defName>
+<!--■■■[GUN]PRESENTATION[GUN]■■■--> 
+    <label>Lancer VS22</label>
+    <description>The Lancer VS22's particle accelerator is capable of firing a focused, high-velocity anti-armor projectile with pinpoint accuracy.</description>
+    <graphicData>
+      <texPath>VS_LancerVS22</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+<!--■■■[GUN]SOUND,VERBS,STATS[GUN]■■■-->  
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <verbs>
+      <li>
+      <soundCast>PSPLANCERSOUNDBODY</soundCast>
+      <defaultProjectile>PSPLANCERBULLET</defaultProjectile>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <forcedMissRadius>0.1</forcedMissRadius>
+      <muzzleFlashScale>12</muzzleFlashScale>
+      <range>54.9</range>
+      <warmupTime>2.00</warmupTime>
+      </li>
+    </verbs>
+    <statBases>
+      <RangedWeapon_Cooldown>1.90</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <Mass>6</Mass>
+      <WorkToMake>60000</WorkToMake>
+    </statBases>
+<!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>75</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+<!--■■■[GUN]TAGS,COMPS,TOOLS[GUN]■■■-->
+    <weaponTags>
+      <li>SpacerGun</li>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <comps>
+      <li>
+      <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+</ThingDef>
+</Defs>
