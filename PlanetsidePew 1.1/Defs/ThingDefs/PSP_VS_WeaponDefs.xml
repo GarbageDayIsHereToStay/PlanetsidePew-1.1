@@ -86,7 +86,7 @@
 <ThingDef ParentName="BaseBullet">
 <defName>PSPORIONBULLET</defName>
 <!--▮▮▮[BULLET]PRESENTATION[BULLET]▮▮▮-->  
-    <label>Orion VS54 buller</label>
+    <label>Orion VS54 bullet</label>
     <graphicData>
       <texPath>VS_OrionVS54Bullet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -352,7 +352,7 @@
       <armorPenetrationBase>0.30</armorPenetrationBase>
       <explosionRadius>1.2</explosionRadius>
       <explosionDelay>0</explosionDelay>
-      <speed>90</speed>
+      <speed>110</speed>
     </projectile>
 <!--■■■[BULLET]COMPS[BULLET]■■■-->
     <comps>
@@ -400,6 +400,7 @@
       <WorkToMake>60000</WorkToMake>
     </statBases>
 <!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <generateCommonality>0.25</generateCommonality>
     <recipeMaker>
       <skillRequirements>
         <Crafting>12</Crafting>

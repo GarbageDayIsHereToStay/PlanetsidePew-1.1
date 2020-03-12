@@ -389,6 +389,7 @@
       <WorkToMake>60000</WorkToMake>
     </statBases>
 <!--■■■[GUN]RECIPE,COST[GUN]■■■-->
+    <generateCommonality>0.40</generateCommonality>
     <recipeMaker>
       <skillRequirements>
         <Crafting>12</Crafting>
