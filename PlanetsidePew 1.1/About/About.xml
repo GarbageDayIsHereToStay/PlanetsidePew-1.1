@@ -2,24 +2,19 @@
 <ModMetaData>
 	<name>PlanetsidePew</name>
 	<author>GarbageDayIsHereToStay</author>
+	<packageId>GarbageDayIsHereToStay.PlanetSidePew</packageId>
 	<supportedVersions><li>1.1</li></supportedVersions>
 	<description>
-JECSTOOLS IS NEEDED TO RUN THIS
+PlanetsidePew coming at cha by means of your friend: "GarbageDayIsHereToStay"
 
-PlanetsidePew cumming at cha, your favorite planetside guns (except for the ones you like that i haven't added) from the mega fantastic SONY game: Planetside 2. These planetside two guns will lead to very enjoyable experiences for you and yours.
-		
 Guns are bundled in with the charge rifle research "Pulse charged munitions", made at the fabrication bench, and are mostly balanced towards higher rates of fire and longer burst sustain but lower bullet damage and accuracy when compared to base game guns.
 		
 Weapons tend to fall along the lines of:
 TR weapons (Red/White) having the lowest bullet damage and accuracy but highest rate of fire 
 NC weapons (Yellow/Blue) having high bullet damage, passable accuracy but lower fire rate
 VS weapons (Purple/Teal) having medium bullet damage but decent fire rate with high accuracy
-		
--Jecstools is needed to run this: https://steamcommunity.com/workshop/filedetails/?id=932008009
--日本語サポート / Japanese Translations
--Mods is not patched for CE; Death to the great satan combat extended. 
-		
-Version: TheThirdVersion
+
+Version: TheThirdVersion 
 ----------------------------------------------------------------------------
 Added 2 different rocket launchers and 1 heavy laser equivalent
 Coloured explosions to match 'em 
